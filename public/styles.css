@@ -1,0 +1,79 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+img{
+    width: 19rem;
+    height: 3rem;
+}
+.mainContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    margin: 0 15rem 0 15rem;
+    gap: 1rem;
+}
+
+.navbarItemFlex{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: black;
+    
+}
+.weatherCard{
+    background-color: #F2F2F2;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid;
+    border-color: black;
+    border-width: 0.1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: 5;
+}
+.weatherIcon{
+    width: 80px;
+    height: 80px;
+}
+.weatherCarFlex{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    
+}
+.temperature{
+    font-size: 5rem;
+}
+.celsius{
+    width: 4rem;
+    height: 4rem;
+}
+.description{
+    font-size: 1.5rem;
+}
+.searchCard{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #F2F2F2;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: solid;
+    border-color: black;
+    border-width: 0.1rem;
+    display: flex;
+    flex-direction: column;
+}
+.first, .second, .third{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
